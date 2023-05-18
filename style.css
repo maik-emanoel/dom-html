@@ -38,6 +38,7 @@ body {
     min-height: 100vh;
 
     size: 21cm 29.7cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
 
 header.main {
@@ -72,7 +73,7 @@ header.main h1 {
     flex-direction: column;
     line-height: 113%;
 
-    padding-right: 4.8rem;
+    padding-right: 3.2rem;
     position: relative;
 }
 
@@ -232,9 +233,14 @@ footer .page {
 }
 
 @media print {
+    :root {
+        font-size: 50%;
+    }
+    
     #app {
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
+        box-shadow: none;
     }
 }
 
