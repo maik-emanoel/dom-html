@@ -30,13 +30,16 @@ body {
     place-items: center;
 
     background: var(--body-bg-color);
+    text-size-adjust: 100%;
 }
 
 #app {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 
+    width: 794px;
+    min-height: 29.7cm;
+    
     size: 21cm 29.7cm;
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
@@ -44,6 +47,11 @@ body {
 header.main {
     padding-block: 3.2rem;
 
+    display: flex;
+}
+
+header.secondary {
+    margin: 2.4rem 0;
     display: flex;
 }
 
@@ -77,6 +85,17 @@ header.main h1 {
     position: relative;
 }
 
+header.secondary h1 {
+    color: var(--header-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    padding-left: 5.6rem;
+    width: 35rem;
+    line-height: 100%;
+}
+
 header.main h1::after {
     content: '';
     position: absolute;
@@ -105,6 +124,18 @@ h1 span:nth-child(3) {
     letter-spacing: 2px;
 }
 
+.secondary h1 span:nth-child(1) {
+    font-size: 1.8rem;
+}
+
+.secondary h1 span:nth-child(2) {
+    font-size: 2.8rem;
+}
+
+.secondary h1 span:nth-child(3) {
+    font-size: 1rem;
+}
+
 .info {
     height: 6.78rem;
 
@@ -115,6 +146,17 @@ h1 span:nth-child(3) {
     padding-left: 1.6rem;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.secondary .info {
+    padding: 0;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .4rem;
+    justify-content: left;
+
+    width: 60%;
 }
 
 main {
@@ -233,14 +275,15 @@ footer .page {
 }
 
 @media print {
-    :root {
-        font-size: 50%;
-    }
-    
     #app {
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
         box-shadow: none;
     }
+}
+
+@page {
+    margin: 0;
+    size: A4;
 }
 
