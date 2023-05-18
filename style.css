@@ -273,6 +273,65 @@ footer .page {
     opacity: .8;
 }
 
+#expediente {
+    margin-top: 3.2rem;
+    padding: .8rem 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+
+    border: 1px solid var(--green-secondary);
+}
+
+#expediente .top {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    padding-bottom: .8rem;
+}
+
+#expediente .top h3 {
+    text-transform: uppercase;
+}
+
+#expediente .middle {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+#expediente .middle .name-wrapper {
+    text-align: center;
+    line-height: 100%;
+}
+
+#expediente .bottom {
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+#expediente .bottom h3 {
+    padding-bottom: .4rem;
+    width: 24rem;
+    text-align: center;
+}
+
+#expediente .bottom .wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#expediente .bottom .wrapper a {
+    display: inline;
+}
+
 @media print {
     #app {
         print-color-adjust: exact;
