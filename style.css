@@ -30,7 +30,6 @@ body {
     place-items: center;
 
     background: var(--body-bg-color);
-    text-size-adjust: 100%;
 }
 
 #app {
@@ -39,7 +38,7 @@ body {
 
     width: 794px;
     min-height: 29.7cm;
-    
+
     size: 21cm 29.7cm;
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
