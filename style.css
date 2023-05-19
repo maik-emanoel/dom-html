@@ -39,7 +39,7 @@ body {
     flex-direction: column;
 
     width: 794px;
-    min-height: 29.7cm;
+    height: 29.7cm;
 
     size: 21cm 29.7cm;
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
