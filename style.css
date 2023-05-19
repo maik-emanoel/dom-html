@@ -32,7 +32,7 @@ body {
     background: var(--body-bg-color);
 }
 
-#app {
+#capa {
     display: flex;
     flex-direction: column;
 
@@ -333,7 +333,7 @@ footer .page {
 }
 
 @media print {
-    #app {
+    #capa {
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
         box-shadow: none;
