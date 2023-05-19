@@ -18,7 +18,7 @@
 
 a {
     text-decoration: none;
-    _display: block;
+    display: block;
     color: black;
 }
 
@@ -27,12 +27,14 @@ body {
     font-size: 1rem;
 
     display: grid;
+    gap: 1rem;
     place-items: center;
 
     background: var(--body-bg-color);
 }
 
-#capa {
+#capa,
+#conteudo {
     display: flex;
     flex-direction: column;
 
@@ -265,21 +267,13 @@ footer div p {
     
     line-height: 100%;
 }
-footer .msg {
-    color: var(--font-primary-color);
-    font-size: 1rem;
-    width: 55rem;
-    text-transform: uppercase;    
-    line-height: 100%;
-    font-style: italic;
-}
 
 footer a {
     color: var(--font-primary-color);
     line-height: 100%;
-    /* font-size: 1.8rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    letter-spacing: 1px; */
+    letter-spacing: 1px;
 }
 
 footer .page {
@@ -304,6 +298,7 @@ footer .page {
 
     border: 1px solid var(--green-secondary);
 }
+
 .top .function{
     font-weight: lighter;
     font-style: italic;
@@ -312,6 +307,7 @@ footer .page {
     font-weight: lighter;
     font-style: italic;
 }
+
 #expediente .top {
     text-align: center;
 
@@ -361,9 +357,17 @@ footer .page {
 }
 
 @media print {
-    #capa {
+    body {
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
+    }
+
+    body {
+        gap: 0;
+    }
+
+    #capa,
+    #conteudo {
         box-shadow: none;
     }
 }
