@@ -235,13 +235,18 @@ main .number-page {
 
 footer {
     width: 100%;
-    height: 6rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
-    padding: 1.2rem 5.6rem;
+    font-size: 1rem;
+
+    padding: 1.2rem 0 0;
     background: var(--header-bg-color);
+}
+
+footer .footer-wrapper {
+    justify-content: space-between;
+    padding: 0 5.6rem;
 }
 
 footer div {
@@ -251,7 +256,7 @@ footer div {
 }
 
 footer div img {
-    width: 3.6rem;
+    width: 2.8rem;
     padding: .6rem;
     border-radius: 50%;
     background: var(--green-secondary);
@@ -259,7 +264,7 @@ footer div img {
 
 footer div p {
     color: var(--font-primary-color);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 17rem;
     text-transform: uppercase;
     
@@ -269,13 +274,13 @@ footer div p {
 footer a {
     color: var(--font-primary-color);
     line-height: 100%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 footer .page {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     padding: .8rem 1.2rem;
 
@@ -283,6 +288,15 @@ footer .page {
     color: var(--font-primary-color);
     background: var(--green-secondary);
     opacity: .8;
+}
+
+footer .address {
+    width: 100%;
+    margin-top: .8rem;
+    padding: .4rem 0;
+    background: var(--green-secondary);
+    text-align: center;
+    color: var(--font-primary-color);
 }
 
 #expediente {
