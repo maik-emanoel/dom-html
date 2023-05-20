@@ -429,12 +429,30 @@ footer .address {
 }
 
 table {
-    flex-shrink: 0;
     text-align: center;
     width: 100%;
     line-height: 130%;
 
     font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.only-one-column p:not(.clausula),
+.only-one-column .title {
+    margin-bottom: 1rem;
+}
+
+.only-one-column table {
+    font-size: 1rem;
+}
+
+.only-one-column table td {
+    padding: .2rem 0;
+}
+
+.clausula,
+.subtitle-wrapper {
+    margin-bottom: .8rem;
 }
 
 table * {
