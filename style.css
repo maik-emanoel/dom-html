@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    width: 794px;
+    width: 21cm;
     height: 29.7cm;
 
     size: 21cm 29.7cm;
@@ -47,13 +47,11 @@ body {
 
 header.main {
     padding-block: 3.2rem;
-
     display: flex;
 }
 
 header.secondary {
     display: flex;
-    margin-bottom: 3.2rem;
 }
 
 header .content {
@@ -171,7 +169,7 @@ main {
 }
 
 main:not(#capa main) {
-    height: 946.51px;
+    padding: 1.6rem 5.6rem;
     overflow: hidden;
 }
 
@@ -374,24 +372,21 @@ footer .address {
     gap: 2rem;
 
     width: 100%;
-    height: 100%;
+    height: 968.11px;
 }
 
 .column {
     flex: 1;
     text-align: justify;
     overflow: hidden;
-    max-height: 100%;
+    height: 100%;
+    line-height: 115%;
 }
 
 .column .title {
     margin-bottom: .8rem;
-    position: relative;
-
     text-align: center;
     font-size: 1.2rem;
-
-    margin-bottom: .8rem;
     color: #556f3f;
 }
 
@@ -437,6 +432,7 @@ table {
     flex-shrink: 0;
     text-align: center;
     width: 100%;
+    line-height: 130%;
 
     font-size: .8rem;
 }
