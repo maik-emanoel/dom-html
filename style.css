@@ -455,6 +455,52 @@ table {
     margin-bottom: .8rem;
 }
 
+.final-page .logo {
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+}
+
+.final-page .logo img {
+    width: 40rem;
+    max-width: none;
+}
+
+.final-page .qr-code {
+    width: 20rem;
+    height: 20rem;
+
+    margin: 0 auto 3.2rem;
+}
+
+.final-page .qr-code img {
+    width: 100%;
+}
+
+.final-page .column {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.final-page .function {
+    font-style: normal;
+}
+
+.final-page .middle {
+    margin: 3.2rem 0 5.6rem;
+}
+
+.final-page .additional-info {
+    width: 70%;
+    margin: auto;
+}
+
+.final-page .additional-info .wrapper p {
+    font-size: 1rem;
+} 
+
 table * {
     border: 1px solid #2c2a2a;
 }
